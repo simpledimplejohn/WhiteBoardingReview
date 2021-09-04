@@ -1,0 +1,18 @@
+function deDupe(array) {
+    const newArray = []
+    for(let i = 0; i < array.length; i++){
+        for(let j = 0; j < array.length; j ++){
+            if(array[j] !== array[i]) {
+                newArray.indexOf(array[j])
+  
+            }
+        }
+    }
+    return newArray
+    
+}
+
+console.log(deDupe([7,9,"hi",12,"hi",7,53]))
+const array = [7,9,"hi",12,"hi",7,53];
+
+const filterArray = array.filter((e, i) => array.indexOf(e) === i )
